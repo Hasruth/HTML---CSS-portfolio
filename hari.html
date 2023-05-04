@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+
+        body{
+            background-color:grey;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: grid;
+            height: 600px;
+            width: 600px;
+            background-color: rgb(18, 41, 41);
+            gap: 10px;
+            grid-template-areas:
+                "rd  wt1 wt1 wt1"
+                "wt2 wt3 wt3 be"
+                "wt2 wt3 wt3 wt4"
+                "wt5 yw bk wt4" ;
+        
+        }
+
+        .rd {
+            grid-area:rd;
+            background-color: red;
+        }
+
+        .wt1 {
+            grid-area: wt1;
+            background-color: rgb(151, 88, 88);
+        }
+
+        .wt2 {
+            grid-area: wt2;
+            background-color: rgba(101, 214, 9, 0.863);
+        }
+
+        .wt3 {
+            grid-area: wt3;
+            background-color: rgb(236, 12, 180);
+        }
+
+        .wt4 {
+            grid-area: wt4;
+            background-color: rgb(87, 7, 214);
+        }
+
+        .wt5 {
+            grid-area: wt5;
+            background-color: rgb(238, 69, 3);
+        }
+
+        .be{
+            grid-area: be;
+            background-color:blue;
+        }
+
+        .yw{
+            grid-area: yw;
+            background-color:yellow;
+        }
+
+        .bk{
+            grid-area:bk;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rd"></div>
+        <div class="wt1"></div>
+        <div class="wt2"></div>
+        <div class="wt3"></div>
+        <div class="be"></div>
+        <div class="wt4"></div>
+        <div class="yw"></div>
+        <div class="bk"></div>
+        <div class="wt5"></div>
+    </div>
+</body>
+
+</html>
